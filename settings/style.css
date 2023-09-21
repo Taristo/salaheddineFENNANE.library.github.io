@@ -144,6 +144,7 @@ border: none;
 border-radius: 5px;
 font-size: 35px;
 color: white;
+     margin:10px;
 }
 .open:hover {
 background-color:white;
