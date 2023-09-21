@@ -1,3 +1,34 @@
+let myn = document.querySelector('.comment');
+
+
+function openwork(){
+myn.classList.toggle("gouch");
+}
+var savedTexts = JSON.parse(localStorage.getItem("savedTexts")) || [];
+
+function saveText() {
+
+    var textInput = document.getElementById("textInput").value;
+
+
+    savedTexts.push(textInput);
+
+
+    localStorage.setItem("savedTexts", JSON.stringify(savedTexts));
+}
+
+function displaySavedTexts() {
+
+    console.log("comments:");
+    savedTexts.forEach(function(text) {
+        console.log(text);
+    });
+}
+
+
+
+
+
 let searchForm = document.getElementById('search-form');
 let searchResult = document.querySelectorAll('.package');
 let result = document.getElementById('list-package');
