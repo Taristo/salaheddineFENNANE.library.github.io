@@ -136,7 +136,7 @@ color: black;
 background-color: white;
     
 }
-open{
+.open{
 background-color: #FF003D;
 padding: 35px;
 justify-content: center;
@@ -145,7 +145,11 @@ border-radius: 5px;
 font-size: 35px;
 color: white;
 }
-
+.open:hover {
+background-color:white;
+color:#FF003D;
+     border: 2px solid #FF003D; 
+}
 
 .comment{
 justify-content: center;
