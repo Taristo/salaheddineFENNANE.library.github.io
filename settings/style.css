@@ -13,13 +13,13 @@ display: fixed;
 }
 
 .title{
-font-size:35px ;
+font-size:40px ;
 font-weight:bold;
 text-align: center;
 color:white;
-padding-top: 50px;
-padding-bottom:50px;
-
+padding-top: 40px;
+padding-bottom:40px;
+margin-bottom:20px;
 background-color:#0096ff;
      width:100vw;
      
@@ -30,7 +30,7 @@ form{
     display: flex;
   justify-content: center;  
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .search-inpute{
 width: 99%;
