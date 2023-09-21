@@ -7,7 +7,7 @@ font-family: Arial;
 }
 body{
 line-height: 1.6;  
-width: 100vw;
+width: 98vw;
 height: 100vh;
 display: fixed;
 }
@@ -78,7 +78,7 @@ border-radius: 5px;
 }
 .package img{
   width: 100%;
-height: 250px;
+height: 300px;
 object-fit: cover;
 transition: opacity 0.3s ease-in-out;
 }
