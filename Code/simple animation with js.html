@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title></title>
+        <style type="text/css" media="all">
+
+        body{
+        
+        width: 100vw;
+        }
+         .ball{
+             width: 50px;
+             height: 50px;
+             border-radius: 50px;
+             background-color: black;
+            
+             position: absolute;
+             animation: animate 8s  3 alternate paused;
+         }   
+         @keyframes animate {
+             0%{
+
+               left:15% ;
+             }
+             50%{
+                 left: 50%;
+             }
+             100%{
+                 left: 100%;
+             }
+         }
+                  @keyframes animate {
+             0%{
+
+               left:15% ;
+             }
+             50%{
+                 left: 50%;
+             }
+             100%{
+                 left: 100%;
+             }
+         }
+                  @keyframes animated {
+             0%{
+
+               right: 15% ;
+             }
+             50%{
+                 right:  50%;
+             }
+             100%{
+                 right:  100%;
+             }
+         }
+
+
+
+
+.droite{
+animation: animate 3s  infinite Linear alternate forwards running;
+background-color: red;
+}
+.gouch{
+animation:animated 3s  infinite  Linear  alternate forwards running;;
+background-color: red;
+}
+
+
+input{
+    background-color: #009FFF;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    top: 100px;
+    margin: 10px;
+}
+input:active{
+    background-color: white;
+    color: #009FFF;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="ball"></div>
+ <input type="button" id="myButton" onclick="droite();" value="droite"/>
+ 
+ <input type="button"id="btn1"onclick="gouch();" value="gouch"/>
+
+            
+<script>
+let myn =document.querySelector('.ball');
+let myButton = document.getElementById("myButton");
+let btn1 =document.getElementById('btn1');
+
+    
+let isClicking = false; 
+
+
+
+myButton.addEventListener("touchstart", function() {
+  isClicking = true; 
+  droite();
+  
+});
+
+myButton.addEventListener("touchend", function() {
+  isClicking = false;
+function stopdroite() {
+if(isClicking === false){
+myn.classList.toggle("droite");
+}
+}
+  stopdroite();
+});
+
+btn1.addEventListener("touchstart", function() {
+  isClicking = true; 
+  
+  gouch();
+});
+
+btn1.addEventListener("touchend", function() {
+  isClicking = false;
+  function stopgouch() {
+if(isClicking === false){
+myn.classList.toggle("gouch");
+}
+}
+  stopgouch();
+});
+
+function droite() {
+if(isClicking){    
+myn.classList.toggle("droite");
+
+}
+
+}
+function gouch() {
+if(isClicking){    
+myn.classList.toggle("gouch");
+
+}
+
+}
+</script>
+        
+    </body>
+</html>

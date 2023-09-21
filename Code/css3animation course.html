@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>animtion in css3 full course</title>
+      <style type="text/css" media="all">
+*{
+margin: 0px;
+padding:0px ;
+
+}
+
+ body{
+display: block;
+flex-direction: column;
+justify-content: space-between;
+width: 95vw;
+height: 100vh;
+ }    
+.container{
+
+display: block;
+background-color: black;
+color:#2AFF00;
+width:200px ;
+height:100px;
+border: none;
+border-radius: 5px;
+margin-left: 10px;
+padding-top:10px; 
+padding-bottom :10px;
+}         
+code{
+position: relative;
+left: 20px;
+ width: 100%;
+display: flex;
+flex-direction: column;
+padding-left: 10px;
+text-align: left;
+font-size: 8px;
+ }  
+code span{
+color:#005BFF;
+} 
+h1{
+background-color: black;
+width: 95vw;
+color: #2AFF00;
+padding: 20px;
+text-align: center;
+margin-bottom:10px;
+font-weight: bold;
+}
+h4{
+font-weight: bold;
+color:#FF2A43;
+}
+h5{
+font-size: 20px;
+color: #00F0FF;
+}
+h3{
+    color: #4100FF;
+    font-weight: bold;
+}
+.container1{
+display: block;
+background-color: black;
+color:#2AFF00;
+width:280px ;
+height:200px;
+border: none;
+border-radius: 5px;
+margin-left: 10px;
+padding-top:10px; 
+padding-bottom :10px;
+}
+.container2{
+    display: block;
+background-color: black;
+color:#2AFF00;
+width:280px ;
+height:50px;
+border: none;
+border-radius: 5px;
+margin-left: 10px;
+padding-top:10px; 
+padding-bottom :10px;
+}
+.container3{
+display: block;
+background-color: black;
+color:#2AFF00;
+width:280px ;
+height:450px;
+border: none;
+border-radius: 5px;
+margin-left: 10px;
+padding-top:10px; 
+padding-bottom :10px;  
+font-size: 15px;
+font-weight: 50;
+}
+h2{
+color: #FF0074;
+font-weight: bold;
+text-align: center;
+
+}
+
+.balloon{
+    width: 100px;
+height: 100px;
+border-radius: 5%;
+
+animation: name 8s linear infinite ;
+}
+@keyframes name{
+0%
+{
+transform: translate(0px,0px) rotate(0deg);    
+background-color:#6F00FF ;
+}
+25%
+{
+transform: translate(250px,0px) rotate(180deg);   
+background-color:#FF6C00 ;
+}
+50%
+{
+transform: translate(250px,500px)rotate(90deg);   
+background-color:#FFEC00 ;
+}
+75%
+{
+transform: translate(0px,500px)rotate(360deg);
+background-color:#4BFF00 ;
+}
+100%
+{
+ transform: translate(0px,0px)rotate(0deg);  
+ background-color: #00FFC8;
+}
+}
+      </style>  
+    </head>
+    <body>
+<h1 class="title">
+    full course animtion in Css3
+</h1>
+<p lang="ar" dir="rtl">هدا الكورس فقط لتكون عندك فكرة عن الانميشن ليس بشامل للكل و لازم قبل م تقرائه تكون دارس كورس css قليلا</p
+>
+<h3 lang="ar" dir="rtl">مقدمة</h3>
+<p dir="rtl" class="body">
+    C33
+  تقدم العديد من الخصائص والإمكانيات لإنشاء تأثيرات حركية (أو animations) مذهلة على صفحات الويب. إليك شرح لأهم جوانب تقنية الرسوم المتحركة في CSS3:            
+
+</p>
+<h4 dir="rtl">
+    1)تكتب كامل animatin داخل keyframes@
+</h4>
+<h5 lang="ar" dir="rtl">
+ ■   مثال 
+</h5>
+<div class="container">
+<code >
+<p class="code"dir="rtl" lang="en">
+<span>@keyframes</span><p>animationName</p> <span>{</span>  
+<br />
+ <p>0%</p> { /* start of animation*/ }<br />
+  <p>50%</p>{ /*  milio of animation */ }<br />
+  <p>100%</p> { /* end  of animation*/} <br />
+<span>}</span>
+</p>
+</code>
+</div>
+<h4 dir="rtl">
+    2) يلزمك تسمية العنصر الدي تريد تحريكه واعطائه مدة زمنية يعمل فيها و المدة الزمنية الدي ينتضر قبل عنله و كيف يبدئ و كيف ينتهي و بعدها استدعائه على keyframes@
+</h4>
+<h5 lang="ar" dir="rtl">
+ ■   كيف يمكن دالك
+</h5>
+<p dir="rtl">
+    او لا يلزمك ان تصنع العصر الدي تريد تحريكه و تضع داخل الستايل الخاص به: 
+    
+    </p>
+    
+
+
+<div class="container1">
+<code>
+ <p dir="rtl" lang="en">
+<p dir="rtl">
+animation-name: animationName;
+ <br />
+/*اسم animation*/
+<br />
+animation-duration: 3s;<br />
+/*مدة الانميشن*/
+<br />
+animation-timing-function: ease-in-out; <br />
+/*طريقة ضهره هل يعني معتدلو او يكون على بطئ حتى يسرع او..*/
+<br />
+  animation-delay: 1s; <br />
+  /*مدة الزمنية قبل بدأ الانميشن*/
+  <br />
+  animation-iteration-count: infinite; <br />
+  /*عدد المرات الدي يعاد فيها الانميشن*/
+  <br />
+  animation-direction: alternate; <br />
+  /*كيف يعود الانميشن بعد انتهائه*/
+  <br />
+   animation-play-state: running; <br />
+   /*حالة الانميشن هل يكون متوقف او يعمل فحالة كنت تريد ان تستدعيه في javascriptاو ان كنت تريد ان تفعل شيئ على hover*/
+    <br />
+    animation-fill-mode:forwards; <br />
+    /*حالة animation بعد الانتهاء */
+     <br />
+    
+    
+</p>
+
+
+ </p>
+</code>
+</div>
+<p dir="rtl">
+    او يمكن تلخيص كل هدا في خانة واحدة
+</p>
+<div class="container2">
+  <code>
+     animation: name 1s linear 2 2s reverse running both;
+     
+  </code>  
+</div>
+<br />
+<h5 dir="rtl">
+لتحديد المدة الزمنية يمكنك كتابة  العدد و ان كان لا نهائية تكتب infinite 
+</h5>
+ <h5 dir="rtl">
+     لجعل animation متوقف تكتب paused و شغال running
+ </h5>
+  <h5 dir="rtl">
+      لجعل animationيبقى على حالة 100% عند الانتهاء تكتب  forwards
+      <br />
+      و لتجعله يبقى على حالة البداية  backwards 
+      <br />
+      و لتجعله يبدئ كما يكون في البداية و ينتهي كما يكون في النهاية تكتب both 
+  </h5>
+  <br />
+  <h5 dir="rtl"> على سبيل المتال<h5>
+ <br /> 
+  <div class="container3">
+    <code>
+<p>
+&lt;!DOCTYPE html&gt;      <br />
+&lt;html&gt;      <br />
+    &lt;head&gt;      <br />
+  &lt;title&gt;exeple for animation&lt
+        <br />
+  ;/title&gt;      <br />
+       &lt;style&gt;      <br />
+.balloon{      <br />
+width: 100px;      <br />
+height: 100px;      <br />
+border-radius: 5%;      <br />
+
+animation: name 8s linear infinite ;      <br />
+}         <br />
+@keyframes name{      <br />
+0%      <br />
+{      <br />
+transform: translate(0px,0px) rotate(0deg);       <br />   
+background-color:#6F00FF ;      <br />
+}      <br />
+25%      <br />
+{      <br />
+transform: translate(250px,0px) rotate(180deg);         <br />
+background-color:#FF6C00 ;      <br />
+}      <br />
+50%      <br />
+{      <br />
+transform: translate(250px,500px)rotate(90deg);         <br />
+background-color:#FFEC00 ;      <br />
+}      <br />
+75%      <br />
+{      <br />
+transform: translate(0px,500px)rotate(360deg);      <br />
+background-color:#4BFF00 ;      <br />
+}      <br />
+100%      <br />
+{      <br />
+ transform: translate(0px,0px)rotate(0deg);       <br /> 
+ background-color: #00FFC8;      <br />
+}      <br />
+}      <br />
+       &lt;/style&gt;       <br />
+    &lt;/head&gt;      <br />
+    &lt;body&gt;
+        &lt;div class="balloon"&gt;      <br />
+            
+        &lt;/div&gt;      <br />
+    &lt;/body&gt;      <br />
+&lt;/html&gt;         <br />
+    
+
+</p>
+    </code> 
+  </div>
+<br />
+<h2 dir="rtl">النتيجة</h2>
+
+
+    <div class="balloon">
+        
+    </div>
+
+
+    </body>
+</html> 

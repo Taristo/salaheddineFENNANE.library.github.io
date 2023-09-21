@@ -1,0 +1,127 @@
+/*Search button*/
+      *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial;
+}
+body{
+line-height: 1.6;  
+width: 98vw;
+height: 100vh;
+display: fixed;
+}
+
+.title{
+font-size:35px ;
+font-weight:bold;
+text-align: center;
+padding: 8px;
+padding-left: 0;
+padding-right: 0;
+margin:0px 0px 10px 0px;
+background-color:#0096ff;
+}
+form{
+    display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-bottom: 10px;
+}
+.search-inpute{
+width: 90%;
+max-width:600px ;
+padding:10px 20px ;
+border: none;
+box-shadow:0 0 6px rgba(0,0,0,0.2) ;
+border-radius: 5px;
+font-size: 18px;
+color: #333;
+margin-left: 10px;
+}
+
+.search-inpute:hover{
+border: 2px solid #00FFCE;
+}
+.button{
+padding: 10px 20px;
+background-color:#0085ff;
+color: white;
+border: none;
+box-shadow:0 0 6px rgba(0,0,0,0.2) ;
+border-radius: 5px;
+font-size: 18px;
+cursor: pointer;
+margin-left: 10px;
+margin-right: 10px;
+}
+/*Search button*/
+.list-package{
+display: flex;  
+ justify-content: space-between;
+ flex-wrap: wrap;
+ width: 100%;
+margin:5px;
+ 
+} 
+.package{
+  width: 30%;
+    height: 100%;
+    border: none;
+box-shadow:0 0 6px rgba(0,0,0,0.2) ;
+border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.package img{
+  width: 100%;
+height: 150px;
+object-fit: cover;
+transition: opacity 0.3s ease-in-out;
+}
+.package img:hover{
+    opacity: 0.7;
+}
+.package h1{
+text-align: center;
+padding-left: 5px;
+padding-right:5px ;
+font-size: 16px;
+}
+.download{
+padding: 5px 10px;
+background-color:#0085ff;
+color: white;
+border: none;
+box-shadow:0 0 6px rgba(0,0,0,0.2) ;
+border-radius: 5px;
+font-size: 18px;
+cursor: pointer;
+margin: 8px;
+}
+.download:hover{
+    background-color: white;
+    color:#0085ff ;
+}
+#view {
+background-color: red;
+}
+#view:hover{
+    color: red;
+    background-color: white;
+}
+#salah {
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #4F4F4F;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+#salah:active{
+color: black;
+background-color: white;
+    
+}

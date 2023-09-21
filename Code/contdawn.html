@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css" media="all">
+    body{
+        
+        display: flex;
+        
+    }
+        #result{
+            display: none;
+        }
+        #countdown{
+           
+            text-align: center;
+            position: relative;
+            top: 7%;
+            font-size: 50px;
+            left: 33%;
+            
+        }
+        .circle{
+justify-content: center;
+        align-items: center;
+            width: 200px;
+            height: 200px;
+            border: 10px solid #00F5FF;
+            border-radius:50%;
+            animation: salah 10s ease-in-out  1 forwards;
+        }
+ @keyframes salah{
+0%{
+ border-left-color: #0051FF;
+transform: rotate(0deg);
+}
+25%{
+    
+    border-left-color: #0051FF;
+    border-top-color:  #0051FF;
+}
+50%{
+    
+    border-left-color: #0051FF;
+    border-top-color:  #0051FF;
+        
+        border-right-color: #0051FF;
+}
+100%{
+        border-bottom-color:#0051FF ;
+    border-top-color:  #0051FF;
+    border-left-color: #0051FF;
+ border-right-color: #0051FF;
+  transform: rotate(360deg);
+}
+        }
+ button{
+     position: relative;
+     width: 100px;
+     height: 40px;
+     border: none;
+     border-radius: 5px;
+     background-color: #00FFFF;
+     color: white;
+     top: 40%;
+     right: 150px;
+    
+    font-size: 20px;
+ }
+    </style>
+</head>
+<body>
+      <h1 id="countdown">10</h1>
+    <div class="circle">
+        
+  </div>
+  <div id="result">
+  <button type="submit">play</button>    
+  </div>
+  <script>
+const countdownElement = document.getElementById("countdown");
+const resultElement = document.getElementById("result");
+let countdown = 10; // Set the initial countdown value (in seconds)
+
+function updateCountdown() {
+  countdown--; // Decrease the countdown by 1 second
+  countdownElement.textContent = countdown; // Update the displayed countdown
+
+  if (countdown === 0) {
+    clearInterval(interval); // Stop the countdown when it reaches 0
+    countdownElement.textContent = "0";
+    performAction(); // Call the function to perform another action
+  }
+}
+
+function performAction() {
+  resultElement.style.display = 'flex'
+
+}
+
+const interval = setInterval(updateCountdown, 1000);
+      
+      
+  </script>
+</body>
+</html>

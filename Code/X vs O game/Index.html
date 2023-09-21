@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+<style>
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: 0px;
+}
+body{
+width: 100vw ;	
+height: 100vh;
+display: block;
+text-align:center ;
+color:white ;
+}
+
+.title{
+background-color: black;
+width:100% ;
+height:50px ;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+padding-bottom: 10px;
+padding-top: 10px;
+
+}
+.title1{
+background-color: black;
+width:100vw ;
+height:50px ;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+padding-bottom: 10px;
+
+padding-top: 10px;
+position: relative;
+right: 3px;
+margin-top: 5px;
+}
+span{
+	color: #00EEFF;
+	font-family: italic;
+}
+.nomber{
+background-color:#00EEFF;
+width:100% ;
+height:50px ;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+padding-bottom: 10px;
+padding-top: 10px;
+border: none;
+}
+
+.container{
+margin-left: 3px;
+}
+.aristo{
+width:32% ;
+height:120px ;
+background-color: #00FF48;
+float: left;
+margin:2px ;
+font-size: 70px;
+font-weight:bold;
+text-align: center;
+color: #00EEFF;
+}
+.aristo:hover{
+	background: black;
+	color: white;
+	cursor: pointer;
+	
+}
+.game--restart{
+background-color:#00FF48;
+width:50%;
+justify-content: center;
+height:50px ;
+font-size: 30px;
+font-weight: 500;
+color:white;
+border: none;
+border-radius:5px;
+margin-top: 5px;
+}
+
+.game--restart:active{
+border: 2px solid black;
+box-shadow: 6px 6px 6px 6px #00FFF9 ;
+color: #00FFF9;
+background-color: white;
+}
+	
+	
+	
+</style>
+
+
+<head/>
+
+<body>
+	
+<h1 class="title">
+<span>x vs o</span> game
+</h1>	
+<div class="nomber" id="number">
+   0 
+</div>
+<div class="container">
+    
+	
+<div class="aristo" id="tech1" onclick="game(this.id)"></div>
+<div class="aristo" id="tech2" onclick="game(this.id)"></div>
+<div class="aristo" id="tech3" onclick="game(this.id)"></div>
+
+<div class="aristo" id="tech4" onclick="game(this.id)"></div>
+<div class="aristo" id="tech5" onclick="game(this.id)"></div>
+<div class="aristo" id="tech6" onclick="game(this.id)"></div>
+	
+<div class="aristo" id="tech7" onclick="game(this.id)"></div>
+<div class="aristo" id="tech8" onclick="game(this.id)"></div>
+<div class="aristo" id="tech9" onclick="game(this.id)"></div>
+	
+		
+		<div/>
+		<button class="nomber" type="button" id="number">
+   
+</button>	
+
+<button type="button" class="game--restart"onclick="Restart();" id="button">restart</button>
+
+<h1 class="title1">
+<span>x vs o</span> game
+</h1>	
+<div class="title1">
+    
+</div>	
+	<script src="js.js">
+
+	</script>
+	
+	
+	
+</body>
+
+
+</html>
