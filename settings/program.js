@@ -1,4 +1,45 @@
+let myn = document.querySelector('.comment');
 
+
+function openwork(){
+myn.classList.toggle("gouch");
+}
+
+
+
+let comments = [];
+
+ 
+function addComment() {
+    const commentInput = document.getElementById('commentInput').value;
+    comments.push(commentInput);
+  
+
+   
+    document.getElementById('commentInput').value = "";
+  
+
+    
+    localStorage.setItem('userComments', JSON.stringify(comments));
+  
+
+   
+    console.log(" new comment " + commentInput);
+}
+    
+
+   
+window.onload = function () {
+    const savedData = localStorage.getItem('userComments');
+    if (savedData) {
+        comments = JSON.parse(savedData);
+        console.log(" data comment:");
+        comments.forEach(function(comment) {
+            console.log(comment);
+        });
+    }
+}
+ /* comments */
 
 
 
